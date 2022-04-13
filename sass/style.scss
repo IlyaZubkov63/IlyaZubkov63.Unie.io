@@ -1,0 +1,17 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import "./blocs/header.scss";
+@import "./blocs/title.scss";
+@import "./blocs/carousel.scss";
+@import"./blocs/menu.scss";
+@import"./blocs/menu-eat.scss";
+@import"./blocs/breakfast.scss";
+@import"./blocs/catalog.scss";
+@import"./blocs/footer.scss";
+@import"./blocs/media.scss";

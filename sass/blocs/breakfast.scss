@@ -1,0 +1,55 @@
+.menu__breakfast {
+    // height: 800px;
+    padding-top: 65px;
+
+    &-container {
+        width: 695px;
+        margin: 0 auto;
+        display: flex; 
+        justify-content: space-between;
+        
+        .breakfast__name {
+            &-item {
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #000000;
+                &_breakfast {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #000000;
+                    margin-bottom: 0; 
+                }
+            }
+            &-desc {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #000000;
+                width: 470px;
+            }
+        }
+        
+    }
+
+    &__subtitle {
+        // width: 1020px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        &-breakfast {
+            font-size: 40px;
+            margin-bottom: 0;
+        }  
+    }
+
+    &__boarder {
+        width: 125px;
+        height: 7px;
+        background-color: black;
+    }
+
+   
+}
+
+@import"./media.scss";
