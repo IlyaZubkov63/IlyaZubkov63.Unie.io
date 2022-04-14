@@ -262,7 +262,7 @@ html {
 }
 
 .menu__bonus {
-  margin-top: 50px;
+  margin: 2rem 0 0 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
