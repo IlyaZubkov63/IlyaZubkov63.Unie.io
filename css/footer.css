@@ -1,0 +1,46 @@
+.footer {
+  position: relative;
+}
+
+.footer__info {
+  position: absolute;
+  top: 90px;
+  left: 70px;
+  height: 200px;
+  background-color: #ffffff;
+  border-left: 10px solid black;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer__info {
+    top: 0;
+    left: 0;
+  }
+}
+
+.footer__item {
+  color: black;
+  margin: 20px 0 0 0;
+}
+
+.footer__addr {
+  font-size: 20px;
+  margin: 5px 0 0 0;
+}
+
+.footer__desc {
+  width: 170px;
+  font-size: 12px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-item img {
+  width: 40px;
+  margin-right: 10px;
+}

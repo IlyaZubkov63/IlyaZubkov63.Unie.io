@@ -1,54 +1,55 @@
 .menu__eat {
-    // height: 725px;
+  &-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 
-    &-container {
-        width: 695px;
-        margin: 0 auto;
-        display: flex; 
-        justify-content: space-between;
-        
-        .eat__name {
-            &-item {
-                font-size: 18px;
-                text-transform: uppercase;
-                font-weight: 600;
-                color: #000000;
-                &_eat {
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: #000000;
-                    margin-bottom: 0; 
-                }
-            }
-            &-desc {
-                font-size: 12px;
-                text-transform: uppercase;
-                font-weight: 600;
-                color: #000000;
-                width: 470px;
-            }
+    .eat__name {
+      &-item {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #000000;
+
+        &_eat {
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #000000;
+          margin-bottom: 0;
         }
-        
-    }
+      }
 
-    &__subtitle {
-        // width: 1020px;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        &-eat {
-            font-size: 40px;
-            margin-bottom: 0;
-        }  
+      &-desc {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #000000;
+      }
     }
+  }
 
-    &__boarder {
-        width: 125px;
-        height: 7px;
-        background-color: black;
+  &__subtitle {
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    &-eat {
+      font-size: 40px;
+      margin-bottom: 0;
     }
+  }
 
-   
+  &__boarder {
+    width: 125px;
+    height: 7px;
+    background-color: black;
+  }
 }
 
-@import"./media.scss";
+.eat__price {
+  flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+  }
+}
