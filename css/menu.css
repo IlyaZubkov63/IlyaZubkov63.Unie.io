@@ -49,3 +49,14 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
+.coffee__price {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .coffee__price {
+    margin-left: 2rem;
+  }
+}
