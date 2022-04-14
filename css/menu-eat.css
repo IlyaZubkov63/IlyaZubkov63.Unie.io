@@ -9,14 +9,12 @@
 }
 
 .menu__eat-container .eat__name-item {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
 }
 
 .menu__eat-container .eat__name-item_eat {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
@@ -36,7 +34,6 @@
 }
 
 .menu__eat__subtitle-eat {
-  font-size: 40px;
   margin-bottom: 0;
 }
 

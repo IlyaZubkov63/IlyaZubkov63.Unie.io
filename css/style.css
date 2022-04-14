@@ -37,6 +37,9 @@ html {
         grid-template-rows: repeat(2, 1fr);
     place-items: center;
   }
+  .header__link a {
+    font-size: 1rem;
+  }
   .header__link a:first-child {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -44,12 +47,16 @@ html {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .header__link a:nth-child(2) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
     grid-row: 2 / -1;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .header__link a:nth-child(3) {
     -ms-grid-column: 2;
@@ -62,10 +69,14 @@ html {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
   .header__link a:nth-child(5) {
     grid-column: 3 / -1;
     grid-row: 2 / -1;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 
@@ -97,7 +108,6 @@ html {
 }
 
 .title__subtitle {
-  font-size: 40px;
   margin-bottom: 0;
 }
 
@@ -217,14 +227,12 @@ html {
 }
 
 .menu__container .coffee__name-item {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
 }
 
 .menu__container .coffee__name-item_eat {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
@@ -244,7 +252,6 @@ html {
 }
 
 .menu__subtitle-coffee {
-  font-size: 40px;
   margin-bottom: 0;
 }
 
@@ -272,14 +279,12 @@ html {
 }
 
 .menu__eat-container .eat__name-item {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
 }
 
 .menu__eat-container .eat__name-item_eat {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
@@ -299,7 +304,6 @@ html {
 }
 
 .menu__eat__subtitle-eat {
-  font-size: 40px;
   margin-bottom: 0;
 }
 
@@ -331,14 +335,12 @@ html {
 }
 
 .menu__breakfast-container .breakfast__name-item {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
 }
 
 .menu__breakfast-container .breakfast__name-item_breakfast {
-  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
@@ -358,7 +360,6 @@ html {
 }
 
 .menu__breakfast__subtitle-breakfast {
-  font-size: 40px;
   margin-bottom: 0;
 }
 
@@ -605,14 +606,21 @@ html {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+  }
+}
+
 .footer__info {
   position: absolute;
   top: 90px;
   left: 70px;
-  height: 200px;
   background-color: #ffffff;
   border-left: 10px solid black;
-  padding-left: 10px;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -650,6 +658,28 @@ html {
 
 section:not(:last-child) {
   margin-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title p {
+    font-size: 1rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .container {
