@@ -1,0 +1,32 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import "./sass/header.scss";
+@import "./sass/title.scss";
+@import "./sass/carousel.scss";
+@import"./sass/menu.scss";
+@import"./sass/menu-eat.scss";
+@import"./sass/breakfast.scss";
+@import"./sass/catalog.scss";
+@import"./sass/footer.scss";
+@import"./sass/media.scss";
+
+// ! settings.json
+// "liveSassCompile.settings.formats":[
+//     {
+//       "format": "expanded",
+//       "extensionName": ".css",
+//       "savePath": "/css"
+//     }
+//   ],
+// "liveSassCompile.settings.generateMap": false,
+// "liveSassCompile.settings.excludeList": [
+// "**/node_modules/**",
+// ".vscode/**",
+// "**/sass/**"
+// ],
