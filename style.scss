@@ -1,20 +1,19 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-@import "./sass/header.scss";
-@import "./sass/title.scss";
-@import "./sass/carousel.scss";
-@import"./sass/menu.scss";
-@import"./sass/menu-eat.scss";
-@import"./sass/breakfast.scss";
-@import"./sass/catalog.scss";
-@import"./sass/footer.scss";
-@import"./sass/media.scss";
+@import './sass/header.scss';
+@import './sass/title.scss';
+@import './sass/carousel.scss';
+@import './sass/menu.scss';
+@import './sass/menu-eat.scss';
+@import './sass/breakfast.scss';
+@import './sass/catalog.scss';
+@import './sass/footer.scss';
 
 // ! settings.json
 // "liveSassCompile.settings.formats":[
@@ -30,3 +29,46 @@ html {
 // ".vscode/**",
 // "**/sass/**"
 // ],
+
+section:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+p {
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+
+.title p {
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    margin: 0 1rem;
+    padding: 0;
+  }
+}
+
+.menu-container {
+  margin: 0 10%;
+
+  @media (max-width: 768px) {
+    margin: 0 1rem;
+  }
+}

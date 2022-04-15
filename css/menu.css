@@ -1,0 +1,62 @@
+.menu__container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__container .coffee__name-item {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+}
+
+.menu__container .coffee__name-item_eat {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.menu__container .coffee__name-desc {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+}
+
+.menu__subtitle {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.menu__subtitle-coffee {
+  margin-bottom: 0;
+}
+
+.menu__boarder {
+  width: 125px;
+  height: 7px;
+  background-color: black;
+}
+
+.menu__bonus {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.coffee__price {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .coffee__price {
+    margin-left: 2rem;
+  }
+}
